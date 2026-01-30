@@ -4,7 +4,7 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-body {
+html, body {
     height: 100vh;
     width: 100vw;
     padding: 0;
@@ -166,6 +166,7 @@ button:hover {
     grid-row: 2;
     grid-template-columns: subgrid;
     grid-template-rows: 80px 1fr;
+    min-height: 0;
 }
 
 .body_header {
@@ -208,41 +209,31 @@ button:hover {
     grid-row: 2;
     padding: 32px 24px;
     grid-template-columns: 1fr 260px;
+    gap: 24px;
+    flex: 1;
+    min-height: 0;
+}
+
+.body_projects, .body_other {
+    height: 100%;
+    min-height: 0;
+}
+
+.body_projects {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
     gap: 12px;
 }
 
-.body_other {
-    grid-column: 2;
-
-}
-
 .projects {
-    grid-column: 1;
-    grid-row: 1 / span 2;
-
     display: grid;
     grid-template-columns: repeat(2, minmax(260px, 1fr));
-    gap: 24px;
-}
+    gap: 32px;
+    flex: 1;        
+    min-height: 0;
 
-.announcements {
-    grid-column: 2;
-    grid-row: 1;
-
-    background: #fff;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-}
-
-.trending {
-    grid-column: 2;
-    grid-row: 2;
-
-    background: #fff;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 .project_card {
@@ -263,17 +254,32 @@ button:hover {
     gap: 16px;
 }
 
-.trending_row {
+.body_other {
+    grid-column: 2;
+    grid-row: 1/3;
     display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-top: 12px;
+    flex-direction: column;
+    gap: 40px;
+    height: 100%;
+    min-height: 0;
 }
 
-.trending_avatar {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+.body_announce {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+    min-height: 0;
+}
+
+.announcements {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    min-height: 0;
+    overflow: auto;
 }
 
 .announcement_item h4 {
@@ -286,5 +292,33 @@ button:hover {
     border-top: 1px solid #ddd;
 }
 
+.body_trend {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+    min-height: 0;
+}
 
+.trending {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    min-height: 0;
+    overflow: auto;
+}
 
+.trending_row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.trending_avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
