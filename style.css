@@ -111,6 +111,11 @@ button:hover {
     font-weight: 500;
 }
 
+.navbar_item img {
+    width: 20px;
+    aspect-ratio: 1;
+}
+
 .header {
     display: flex;
     direction: row;

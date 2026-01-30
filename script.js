@@ -60,14 +60,14 @@ function generateNavbar() {
 
     navbarFeatures.forEach(item => {
         const featureElement = document.createElement("div");
-        const elementIcon = document.createElement("p");
+        const elementIcon = document.createElement("img");
         const elementText = document.createElement("p");
 
         featureElement.setAttribute("id", `${item[0]}`);
         featureElement.setAttribute("class", `navbar_item`);
 
         elementText.textContent = `${item[0]}`;
-        elementIcon.textContent = `${item[1]}`;
+        elementIcon.setAttribute("src", `${item[1]}`);
 
         featureElement.append(elementIcon, elementText);
         featureContainer.appendChild(featureElement);
@@ -75,14 +75,14 @@ function generateNavbar() {
 
     navbarSettings.forEach(item => {
         const featureElement = document.createElement("div");
-        const elementIcon = document.createElement("p");
+        const elementIcon = document.createElement("img");
         const elementText = document.createElement("p");
 
         featureElement.setAttribute("id", `${item[0]}`);
         featureElement.setAttribute("class", `navbar_item`);
 
         elementText.textContent = `${item[0]}`;
-        elementIcon.textContent = `${item[1]}`;
+        elementIcon.setAttribute("src", `${item[1]}`);
 
         featureElement.append(elementIcon, elementText);
         settingContainer.appendChild(featureElement);

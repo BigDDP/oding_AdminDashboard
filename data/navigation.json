@@ -1,9 +1,9 @@
 {
     "navbarFeatures": [ 
-        ["Home", "a"], ["Profile", "b"], ["Messages", "c"], ["History", "d"], ["Taks", "e"], ["Communities", "f"]
+        ["Home", "img/home.svg"], ["Profile", "img/card-account-details-outline.svg"], ["Messages", "img/message.svg"], ["History", "img/clock-time-eight-outline.svg"], ["Tasks", "img/note-multiple-outline.svg"], ["Communities", "img/account-group.svg"]
     ],
 
     "navbarSettings": [
-        ["Settings", "g"], ["Support", "h"], ["Privacy", "i"]
+        ["Settings", "img/cog.svg"], ["Support", "img/help-box.svg"], ["Privacy", "img/shield-check.svg"]
     ]
 }
