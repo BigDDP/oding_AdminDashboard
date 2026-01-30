@@ -1,0 +1,64 @@
+{
+    "projects": [
+        {
+            "title": "Super Cool Project",
+            "content": "Phasellus pulvinar lobortis lorem in vehicula."
+        },
+        {
+            "title": "Less Cool Project",
+            "content": "Phasellus pulvinar lobortis lorem in vehicula. Sed mollis nisi sit amet."
+        },
+        {
+            "title": "Impossible App",
+            "content": "Phasellus pulvinar lobortis lorem in vehicula. Sed mollis nisi sit amet tortor vehicula condimentum vitae eget metus."
+        },
+        {
+            "title": "Easy Peasy App",
+            "content": "In vehicula. Sed mollis nisi sit amet tortor vehicula condimentum vitae eget metus."
+        },
+        {
+            "title": "Ad Blocker",
+            "content": "Phasellus pulvinar lobortis lorem in. amet tortor vehicula condimentum vitae eget metus vehicula. Sed mollis nisi sit ."
+        },
+        {
+            "title": "Money Maker",
+            "content": "Phasellus pulvinar vehicula. Sed mollis nisi sit lobortis lorem in vehicula. Sed mollis nisi sit amet condimentum vitae eget metus."
+        }
+    ],
+    "announcements": [
+        {
+            "title": "Site Maintenance",
+            "description": "Phasellus pulvinar lobortis lorem in vehicula. Sed mollis nisi sit amet tortor vehicula condimentum vitae eget metus."
+        },
+        {
+            "title": "Site Maintenance",
+            "description": "Phasellus pulvinar lobortis lorem in vehicula. Sed mollis nisi sit amet tortor vehicula condimentum vitae eget metus."
+        },
+        {
+            "title": "Site Maintenance",
+            "description": "Phasellus pulvinar lobortis lorem in vehicula. Sed mollis nisi sit amet tortor vehicula condimentum vitae eget metus."
+        }
+    ],
+    "trending": [
+        {
+            "img": "a",
+            "name": "@tegan",
+            "tag": "World Peace Builder"
+        },
+        {
+            "img": "b",
+            "name": "@morgan",
+            "tag": "Super Cool Project"
+        },
+        {
+            "img": "c",
+            "name": "@kendall",
+            "tag": "Life Changing App"
+        },
+        {
+            "img": "d",
+            "name": "@alex",
+            "tag": "No Traffic Maker"
+        }
+    ]
+}

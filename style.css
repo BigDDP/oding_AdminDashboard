@@ -19,11 +19,35 @@ body {
     --text-dark: #000000;
 }
 
+input {
+    border-radius: 100px;
+    background-color: var(--body-grey);
+    border: 0;
+    height: 32px;
+    width: inherit;
+    padding: 4px 24px;
+}
+
+button {
+    border: 0;
+    border-radius: 100px;
+    height: 32px;
+    width: fit-content;
+    padding: 8px 28px;
+    background-color: var(--navbar-blue);
+    color: var(--text-light);
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: lch(from var(--navbar-blue) calc(l + 10%) c h);
+}
+
 .container {
     display: grid;
     height: 100%;
     width: 100vw;
-    grid-template: 80px 1fr / 260px 1fr
+    grid-template: 72px 1fr / 260px 1fr
 }
 
 .sidebar {
@@ -88,9 +112,51 @@ body {
 }
 
 .header {
+    display: flex;
+    direction: row;
+    gap: 24px;
+    align-items: center;
+    justify-content: space-between;
     background-color: var(--neutral-white);
     grid-column: 2;
-    padding: 24px 32px;
+    padding: 20px 32px;
+
+}
+
+.header_search {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    min-width: fit-content;
+    width: 80%;
+}
+
+.header_search p {
+    font-weight: 500;
+}
+
+.header_nav {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    width: fit-content;
+}
+
+.header_nav img {
+    width: 48px;
+    aspect-ratio: 1;
+}
+
+.icon_btn, 
+.header_nav button {
+    background-color: var(--neutral-white);
+    color: var(--text-dark);
+    padding: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    white-space: nowrap;
 }
 
 .body {
@@ -106,11 +172,119 @@ body {
     background-color: var(--neutral-white);
     padding: 12px 32px;
     grid-row: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bheader_user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.bheader_user img {
+    width: 72px;
+    aspect-ratio: 1;
+}
+
+.bheader_user div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.bheader_btn {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
 }
 
 .body_container {
+    display: grid;
     grid-row: 2;
     padding: 32px 24px;
+    grid-template-columns: 1fr 260px;
+    gap: 12px;
 }
+
+.body_other {
+    grid-column: 2;
+
+}
+
+.projects {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.announcements {
+    grid-column: 2;
+    grid-row: 1;
+
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.trending {
+    grid-column: 2;
+    grid-row: 2;
+
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.project_card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    border-left: 8px solid #f0b429;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project_actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+.trending_row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.trending_avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.announcement_item h4 {
+    margin-bottom: 4px;
+}
+
+.announcement_divider {
+    margin: 16px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
 
 

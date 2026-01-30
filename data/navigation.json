@@ -1,0 +1,9 @@
+{
+    "navbarFeatures": [ 
+        ["Home", "a"], ["Profile", "b"], ["Messages", "c"], ["History", "d"], ["Taks", "e"], ["Communities", "f"]
+    ],
+
+    "navbarSettings": [
+        ["Settings", "g"], ["Support", "h"], ["Privacy", "i"]
+    ]
+}
